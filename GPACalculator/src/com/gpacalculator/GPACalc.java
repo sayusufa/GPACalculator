@@ -11,6 +11,7 @@ public class GPACalc {
 		
 		String file = "C:\\Users\\Yusuf\\Documents\\workspace-sts-3.9.4.RELEASE\\GPACalculator\\src\\stu_records.txt";
 		
+		// reads data from a csv file and put them in an array
 		List<String []> gradeRecords = com.utilities.CSV.read(file);
 		
 		for(String [] record : gradeRecords) {
@@ -21,6 +22,7 @@ public class GPACalc {
 			String lname = record[3];
 			String [] courseList = {record[4], record[5], record[6]};
 			
+			// checks to differentiate between bachelor from master 
 			if(prog.equals("Bsc")) {
 				
 				students.add(new BachelorStudent(fname,lname,matrix,prog,courseList));

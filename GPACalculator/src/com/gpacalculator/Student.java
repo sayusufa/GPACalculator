@@ -26,8 +26,10 @@ public abstract class Student implements IGradeBachelor, IGradeMaster {
 		int length = course.length;
 		char[] points = new char[length];
 		
+		// Enter into a loop that picks a letter for each "course" given
 		for(int i=0; i<length; i++) {
 			
+			// Generate a random integer between 0 and 5 (the length of pointSet)
 			int randNum = (int) (Math.random() * pointSet.length());
 			points[i] = pointSet.charAt(randNum);
 		}

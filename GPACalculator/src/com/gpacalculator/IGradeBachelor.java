@@ -4,6 +4,7 @@ public interface IGradeBachelor {
 	
 	default double getIGradePoint(char grade) {
 		
+		// Assigns values for letters 
 		if(grade == 'A') {
 			return 4.0;
 		} else if(grade == 'B') {

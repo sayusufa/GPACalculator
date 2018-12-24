@@ -23,6 +23,8 @@ public class BachelorStudent extends Student {
 		GPA = 0;
 		gradePoint = gradePoints(course);
 		int length = gradePoint.length;
+		
+		// Enter into a loop that returns GPA
 		for(int i=0; i<length; i++) {
 			
 			char grade = gradePoint[i];
@@ -31,6 +33,7 @@ public class BachelorStudent extends Student {
 		
 		GPA /= length;
 		
+		// checks for minimum standard
 		if(GPA >= 2.7) {
 			isProjectApproved = true;
 		}
